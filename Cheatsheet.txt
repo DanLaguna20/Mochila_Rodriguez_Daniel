@@ -1,0 +1,59 @@
+A continuación, una lista con los comandos más utilizados y una explicación de los mismos:
+
+1.-git init
+Inicia git y nos permite empezar a usar un sistema de control de versiones.
+$ git init
+
+2.-git add
+Permite preparar archivos para commitearlos. Se puede usar con el nombre especifico de un archivo o con un . para prepara todos los archivos en carpeta.
+$ git add
+$ git add .
+
+3.-git config user.name / user.email
+Sirve para configurar las credenciales de git para vincular a Github. El nombre y el correo del usuario se pueden configurar de manera global con --global.
+$ git config --global user.name "Daniel"
+$ git config --global user.email danielaguna20@gmail.com
+
+4.-git commit -m
+Es el comando para hacer un commit a los archivos listos con git add. Debe estar acompañado de un mensaje que especifique qué se hace y por qué.
+$ git commit -m "Añado los 3 archivos faltantes al proyecto"
+
+5.-git remote add origin
+Comando que sirve para crear una conexión a un repositorio remoto y así cargar un proyecto a Github. Se requiere la dirección del repositorio.
+$ git remote add origin https://github.com/DanLaguna20/Mochila_Rodriguez_Daniel.git
+
+6.- git push origin main 
+Sirve para subir archivos y modificaciones al repositorio remoto. Es necesario verificar la rama en la que estamos trabajando
+$ git push origin main 
+
+7.- git pull origin main
+Nos permite descargar los archivos del repositorio con el que estamos trabajando con todos sus cambios y actualizaciones. Se recomienda usarlo antes de iniciar a trabajar o antes de hacer un commit.
+$ git pull origin main 
+
+8.- git clone
+Si queremos trabajar con un repositorio remoto, lo podemos clonar con este comando. Es necesario especificar la dirección del repositorio.
+$ git clone https://github.com/DanLaguna20/Mochila_Rodriguez_Daniel.git
+
+9.- git branch <nombre>
+Permite crear una nueva rama en el repositorio si se especifica su nombre. De lo contrario, nos mostrará las ramas existentes
+$ git branch trabajo_github
+$ git branch
+* main
+  trabajo_github
+
+10.- git checkout o git switch
+Permite cambiar de ramas dependiendo de nuestras necesidades.
+$ git switch trabajo_github
+
+11.- git merge
+Nos deja fusionar diversas ramas del proyecto si estamos satisfechos con los cambios y avances.
+$ git merge
+
+12.- git log
+Muestra el historial de commits con sus respectivos hash. Se puede usar --oneline para mostrarlo de forma más sintetizada.
+$ git log
+commit 9db0f9b6d79810cbff73e9fc548d16279acf6950 (HEAD -> trabajo_github, origin/main, main)
+Author: --global <--global>
+Date:   Fri May 19 20:16:18 2023 -0600
+
+    Envío carpetas de entregas  y archivos Readme
