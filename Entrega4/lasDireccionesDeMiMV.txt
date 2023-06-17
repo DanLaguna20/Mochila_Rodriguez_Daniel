@@ -1,0 +1,4 @@
+IP privada: 10.0.2.15
+MAC: 08:00:27:f4:75:a6
+
+Las direcciones de la máquina virtual y el host son diferentes, ya que son entornos distintos.
